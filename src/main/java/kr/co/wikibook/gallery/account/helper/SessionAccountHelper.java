@@ -56,6 +56,7 @@ public class SessionAccountHelper implements AccountHelper {
         return getMemberId(req) != null;
     }
 
+    // 로그아웃 기능
     @Override
     public void logout(HttpServletRequest req, HttpServletResponse res) {
         HttpUtils.removeSession(req, AccountConstants.MEMBER_ID_NAME);
